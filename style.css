@@ -1,0 +1,136 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: #f0f4f8;
+    color: #3a059c;
+    overflow-x: hidden;
+}
+
+header {
+    background: #850a0a;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 50px;
+    z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    margin: 0 20px;
+    font-size: 1.1rem;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #863d2b;
+}
+
+section {
+    padding: 100px 20px;
+    text-align: center;
+}
+
+section#home {
+    background: url('Dibujos.avif') center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    color: white;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);
+}
+
+section#home h2 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+section#about, section#services {
+    background-color: #fff;
+    padding: 80px 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    margin-top: -50px;
+}
+
+section#about h2, section#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+}
+
+section#about p, section#services p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    color: #666;
+}
+
+.services-cards {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.service-card {
+    background: #ff7e5f;
+    color: white;
+    padding: 40px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.service-card h3 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Animaciones */
+.fade-in {
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
